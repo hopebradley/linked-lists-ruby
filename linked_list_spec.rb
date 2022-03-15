@@ -37,9 +37,7 @@ describe 'linked list functions' do
   it 'sorts a linked list from smallest to largest value' do
     list = create_list [6, 13, 2, 8, 19, 3]
     
-    sort_list_values(list.head)
-
-    expect(list.to_s).to eq "2 --> 3 --> 6 --> 8 --> 13 --> 19 --> nil"
+    expect(merge_sort(list.head)).to eq "2 --> 3 --> 6 --> 8 --> 13 --> 19 --> nil"
   end
 
 
