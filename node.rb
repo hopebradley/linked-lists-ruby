@@ -12,4 +12,5 @@ class Node
   def to_s
     @next_node ? "#{@value} --> #{@next_node.to_s}" : "#{@value} --> nil"
   end
+
 end
